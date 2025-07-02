@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBO Max - Curta as melhores histórias para todo mundo</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" href="assets/images/hbo-logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="assets/images/hbo-logo.svg" alt="HBO Max" class="nav__logo-img">
+            </a>
+            <ul class="nav__links">
+                <li><a href="#subscription" class="nav__link">Planos</a></li>
+                <li><a href="#content" class="nav__link">Conteúdo</a></li>
+                <li><a href="#featured" class="nav__link">Em Alta</a></li>
+                <li><a href="signIn.html" class="nav__link">Entrar</a></li>
+            </ul>
+            <a href="#subscription" class="nav__cta">Assine Agora</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero__title">CURTA AS MELHORES HISTÓRIAS<br>PARA TODO MUNDO</h1>
+        <p class="hero__subtitle">Assinaturas a partir de</p>
+        <p class="hero__price">R$14,15 /mês*</p>
+        <p class="hero__disclaimer">*aplicável ao plano anual com o pagamento antecipado.</p>
+        <a href="#subscription" class="hero__cta">ASSINE AGORA</a>
+    </section>
+
+    <!-- Subscription Plans -->
+    <section id="subscription" class="subscription">
+        <h2 class="subscription__title">Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h2>
+        
+        <div class="subscription__plans">
+            <!-- Plano Mobile -->
+            <div class="plan">
+                <h3 class="plan__name">Mobile</h3>
+                <div class="plan__price">R$ 19,90 <span class="plan__price-period">/mês</span></div>
+                <ul class="plan__features">
+                    <li class="plan__feature">Aproveite em smartphones e tablets, onde quiser.</li>
+                    <li class="plan__feature">Assista em 1 tela por vez.</li>
+                    <li class="plan__feature">Tenha conteúdo em resolução adaptada para cada dispositivo.</li>
+                    <li class="plan__feature">Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
+                </ul>
+                <a href="#" class="plan__cta">ESCOLHER O PLANO MOBILE</a>
+            </div>
+
+            <!-- Plano Multitelas -->
+            <div class="plan">
+                <h3 class="plan__name">Multitelas</h3>
+                <div class="plan__price">R$ 27,90 <span class="plan__price-period">/mês</span></div>
+                <ul class="plan__features">
+                    <li class="plan__feature">Aproveite em todos os seus dispositivos.</li>
+                    <li class="plan__feature">Chromecast e Airplay disponíveis.</li>
+                    <li class="plan__feature">Assista em até 3 telas ao mesmo tempo.</li>
+                    <li class="plan__feature">Tenha conteúdo em alta definição, com qualidade 4K.</li>
+                    <li class="plan__feature">Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
+                    <li class="plan__feature">Crie até 5 perfis diferentes.</li>
+                </ul>
+                <a href="#" class="plan__cta">ESCOLHER O PLANO MULTITELAS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Content Section -->
+    <section id="content" class="content">
+        <h2 class="content__title">Descubra novos universos</h2>
+        
+        <div class="content__brands">
+            <div class="brand">
+                <img src="assets/images/hbo-default_0.webp" alt="HBO" class="brand__image" data-hover="assets/images/hbo-hover_0.webp">
+            </div>
+            <div class="brand">
+                <img src="assets/images/MAX-Default.webp" alt="Max Originals" class="brand__image" data-hover="assets/images/MAX-Hover.webp">
+            </div>
+            <div class="brand">
+                <img src="assets/images/DC_Default.webp" alt="DC" class="brand__image" data-hover="assets/images/DC-Hover.webp">
+            </div>
+            <div class="brand">
+                <img src="assets/images/WB-Default.webp" alt="Warner Bros" class="brand__image" data-hover="assets/images/WB-Hover.webp">
+            </div>
+            <div class="brand">
+                <img src="assets/images/CN-Default.webp" alt="Cartoon Network" class="brand__image" data-hover="assets/images/CN-Hover.png">
+            </div>
+            <div class="brand">
+                <img src="assets/images/UCL-Default.webp" alt="UEFA Champions League" class="brand__image" data-hover="assets/images/UCL-Hover.webp">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section id="featured" class="featured">
+        <div class="featured__container">
+            <h2 class="featured__title">Em alta na HBO Max</h2>
+            <div class="featured__carousel">
+                <button class="carousel__btn carousel__btn--prev" id="prevBtn">❮</button>
+                <div class="carousel__wrapper">
+                    <div class="carousel__track" id="carouselTrack">
+                        <div class="movie-card">
+                            <div class="movie-card__image">
+                                <div class="movie-placeholder">🎬</div>
+                            </div>
+                            <h3 class="movie-card__title">House of the Dragon</h3>
+                            <p class="movie-card__genre">Drama • Fantasia</p>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-card__image">
+                                <div class="movie-placeholder">🦇</div>
+                            </div>
+                            <h3 class="movie-card__title">The Batman</h3>
+                            <p class="movie-card__genre">Ação • Crime</p>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-card__image">
+                                <div class="movie-placeholder">⚡</div>
+                            </div>
+                            <h3 class="movie-card__title">The Flash</h3>
+                            <p class="movie-card__genre">Ação • Ficção</p>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-card__image">
+                                <div class="movie-placeholder">🏆</div>
+                            </div>
+                            <h3 class="movie-card__title">UEFA Champions League</h3>
+                            <p class="movie-card__genre">Esportes • Ao Vivo</p>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-card__image">
+                                <div class="movie-placeholder">👑</div>
+                            </div>
+                            <h3 class="movie-card__title">Game of Thrones</h3>
+                            <p class="movie-card__genre">Drama • Fantasia</p>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-card__image">
+                                <div class="movie-placeholder">🚀</div>
+                            </div>
+                            <h3 class="movie-card__title">Dune</h3>
+                            <p class="movie-card__genre">Ficção • Aventura</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__btn carousel__btn--next" id="nextBtn">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats__container">
+            <div class="stats__grid">
+                <div class="stat">
+                    <div class="stat__number" data-target="50">0</div>
+                    <div class="stat__label">Milhões de Usuários</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-target="10000">0</div>
+                    <div class="stat__label">Horas de Conteúdo</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-target="150">0</div>
+                    <div class="stat__label">Países Disponíveis</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-target="98">0</div>
+                    <div class="stat__label">% Satisfação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials__container">
+            <h2 class="testimonials__title">O que nossos usuários dizem</h2>
+            <div class="testimonials__grid">
+                <div class="testimonial">
+                    <div class="testimonial__rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial__text">"A qualidade do conteúdo é impressionante! House of the Dragon e The Batman são incríveis em 4K."</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">👤</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Ana Silva</h4>
+                            <p class="testimonial__location">São Paulo, SP</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial__text">"Poder assistir Champions League ao vivo e ainda ter todo catálogo da HBO é perfeito!"</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">⚽</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Carlos Santos</h4>
+                            <p class="testimonial__location">Rio de Janeiro, RJ</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial__text">"Interface muito intuitiva e o download para assistir offline é uma mão na roda!"</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">📱</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Maria Oliveira</h4>
+                            <p class="testimonial__location">Belo Horizonte, MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq__container">
+            <h2 class="faq__title">Perguntas Frequentes</h2>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span>Posso cancelar minha assinatura a qualquer momento?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Sim! Você pode cancelar sua assinatura a qualquer momento sem taxas de cancelamento. Sua assinatura permanecerá ativa até o final do período já pago.</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span>Quantos dispositivos posso usar simultaneamente?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>No plano Mobile você pode assistir em 1 tela por vez. No plano Multitelas você pode assistir em até 3 telas simultaneamente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span>Posso baixar conteúdo para assistir offline?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Sim! Ambos os planos permitem download de filmes e séries para assistir offline em dispositivos móveis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__links">
+            <a href="#" class="footer__link">AGORA NA HBO MAX</a>
+            <a href="#" class="footer__link">EM BREVE</a>
+            <a href="#" class="footer__link">FILME EM DESTAQUE</a>
+            <a href="#" class="footer__link">SÉRIES</a>
+            <a href="#" class="footer__link">AJUDA</a>
+        </div>
+        
+        <div class="footer__social">
+            <a href="#" class="footer__social-link">
+                <img src="assets/images/fb_0.png" alt="Facebook" class="footer__social-icon">
+            </a>
+            <a href="#" class="footer__social-link">
+                <img src="assets/images/twitter_0.png" alt="Twitter" class="footer__social-icon">
+            </a>
+            <a href="#" class="footer__social-link">
+                <img src="assets/images/instagram_0.png" alt="Instagram" class="footer__social-icon">
+            </a>
+            <a href="#" class="footer__social-link">
+                <img src="assets/images/youtube_0.png" alt="YouTube" class="footer__social-icon">
+            </a>
+        </div>
+        
+        <p class="footer__copyright">
+            © 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.
+        </p>
+    </footer>
+
+    <script>
+        // Adicionar efeito hover nas imagens das marcas
+        document.querySelectorAll('.brand__image').forEach(img => {
+            const hoverSrc = img.getAttribute('data-hover');
+            const originalSrc = img.src;
+            
+            img.addEventListener('mouseenter', () => {
+                if (hoverSrc) {
+                    img.src = hoverSrc;
+                }
+            });
+            
+            img.addEventListener('mouseleave', () => {
+                img.src = originalSrc;
+            });
+        });
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Lógica do carrossel melhorada
+        const track = document.getElementById('carouselTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        if (track && prevBtn && nextBtn) {
+            let currentIndex = 0;
+            const getCardWidth = () => {
+                const card = track.querySelector('.movie-card');
+                return card ? card.offsetWidth + 24 : 304; // 280px + 24px gap ou fallback
+            };
+            const getCardsToShow = () => {
+                const containerWidth = track.parentElement.offsetWidth;
+                const cardWidth = getCardWidth();
+                return Math.floor(containerWidth / cardWidth) || 1;
+            };
+            
+            function updateCarousel() {
+                const cardWidth = getCardWidth();
+                const cardsToShow = getCardsToShow();
+                const maxIndex = Math.max(0, track.children.length - cardsToShow);
+                
+                // Ajustar índice se necessário
+                if (currentIndex > maxIndex) {
+                    currentIndex = maxIndex;
+                }
+                
+                const translateX = -currentIndex * cardWidth;
+                track.style.transform = `translateX(${translateX}px)`;
+                
+                // Atualizar estado dos botões
+                prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+                nextBtn.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
+                prevBtn.disabled = currentIndex === 0;
+                nextBtn.disabled = currentIndex >= maxIndex;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                const cardsToShow = getCardsToShow();
+                const maxIndex = Math.max(0, track.children.length - cardsToShow);
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            });
+
+            // Auto-play do carrossel
+            let autoplayInterval = setInterval(() => {
+                const cardsToShow = getCardsToShow();
+                const maxIndex = Math.max(0, track.children.length - cardsToShow);
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                updateCarousel();
+            }, 5000);
+
+            // Pausar autoplay no hover
+            const carouselContainer = track.closest('.featured__carousel');
+            if (carouselContainer) {
+                carouselContainer.addEventListener('mouseenter', () => {
+                    clearInterval(autoplayInterval);
+                });
+
+                carouselContainer.addEventListener('mouseleave', () => {
+                    autoplayInterval = setInterval(() => {
+                        const cardsToShow = getCardsToShow();
+                        const maxIndex = Math.max(0, track.children.length - cardsToShow);
+                        if (currentIndex < maxIndex) {
+                            currentIndex++;
+                        } else {
+                            currentIndex = 0;
+                        }
+                        updateCarousel();
+                    }, 5000);
+                });
+            }
+
+            // Redimensionar carrossel quando a janela muda de tamanho
+            window.addEventListener('resize', () => {
+                setTimeout(updateCarousel, 100); // Pequeno delay para recalcular dimensões
+            });
+
+            // Inicializar carrossel
+            setTimeout(updateCarousel, 100); // Aguardar renderização
+        }
+
+        // Efeito parallax suave no scroll
+        let ticking = false;
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        });
+
+        // Animação de entrada para elementos
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animação
+        document.querySelectorAll('.plan, .movie-card, .brand, .stat, .testimonial').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animar contadores quando entram na viewport
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.dataset.target);
+                    animateCounter(entry.target, target);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat__number').forEach(counter => {
+            statsObserver.observe(counter);
+        });
+
+        // FAQ Interativo
+        document.querySelectorAll('.faq__question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Fechar todos os outros FAQ items
+                document.querySelectorAll('.faq__item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Abrir o item clicado se não estava ativo
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Contador animado (para estatísticas futuras)
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target.toLocaleString();
+                } else {
+                    element.textContent = Math.floor(start).toLocaleString();
+                    requestAnimationFrame(updateCounter);
+                }
+            }
+            
+            updateCounter();
+        }
+
+        // Lazy loading para imagens
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            imageObserver.unobserve(img);
+                        }
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Theme switcher (modo escuro/claro) - futuro
+        function toggleTheme() {
+            document.body.classList.toggle('light-theme');
+            const isLight = document.body.classList.contains('light-theme');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        }
+
+        // Carregar tema salvo
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+</body>
+</html>

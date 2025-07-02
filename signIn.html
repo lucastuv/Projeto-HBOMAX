@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBO Max - Entrar</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/signin.css">
+    <link rel="icon" href="assets/images/hbo-logo.svg" type="image/svg+xml">
+</head>
+<body class="signin-body">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/hbo-logo.svg" alt="HBO Max" style="height: 40px;">
+            </a>
+            <ul class="nav__links">
+                <li><a href="index.html#subscription" class="nav__link">Planos</a></li>
+                <li><a href="index.html#content" class="nav__link">Conteúdo</a></li>
+            </ul>
+            <a href="index.html#subscription" class="nav__cta">Assine Agora</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="signin-main">
+        <div class="signin-container">
+            <div class="signin-form-wrapper">
+                <h1 class="signin-title">Entrar</h1>
+                
+                <form class="signin-form" id="signinForm">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="Endereço de e-mail"
+                            required
+                        >
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            class="form-input" 
+                            placeholder="Senha"
+                            required
+                        >
+                        <span class="form-error" id="passwordError"></span>
+                    </div>
+                    
+                    <button type="submit" class="signin-btn">ENTRAR</button>
+                    
+                    <div class="social-login">
+                        <p class="social-login__text">Ou entre com:</p>
+                        <div class="social-login__buttons">
+                            <button type="button" class="social-btn social-btn--google">
+                                <span>🔍</span> Google
+                            </button>
+                            <button type="button" class="social-btn social-btn--facebook">
+                                <span>📘</span> Facebook
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="signin-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            Lembrar de mim
+                        </label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                </form>
+                
+                <div class="signup-link">
+                    <p>Não tem uma conta? <a href="index.html#subscription">Assine agora</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Validação do formulário
+        document.getElementById('signinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+            const emailError = document.getElementById('emailError');
+            const passwordError = document.getElementById('passwordError');
+            
+            // Limpar erros anteriores
+            emailError.textContent = '';
+            passwordError.textContent = '';
+            email.classList.remove('form-input--error');
+            password.classList.remove('form-input--error');
+            
+            let isValid = true;
+            
+            // Validar email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim()) {
+                emailError.textContent = 'O endereço de e-mail é obrigatório.';
+                email.classList.add('form-input--error');
+                isValid = false;
+            } else if (!emailRegex.test(email.value)) {
+                emailError.textContent = 'Digite um endereço de e-mail válido.';
+                email.classList.add('form-input--error');
+                isValid = false;
+            }
+            
+            // Validar senha
+            if (!password.value.trim()) {
+                passwordError.textContent = 'A senha é obrigatória.';
+                password.classList.add('form-input--error');
+                isValid = false;
+            } else if (password.value.length < 6) {
+                passwordError.textContent = 'A senha deve ter pelo menos 6 caracteres.';
+                password.classList.add('form-input--error');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Simular login (em um projeto real, aqui faria a requisição para o servidor)
+                alert('Login realizado com sucesso! (Simulação)');
+                // Redirecionar para a página principal
+                window.location.href = 'index.html';
+            }
+        });
+
+        // Adicionar efeito de foco nos inputs
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('form-group--focused');
+            });
+            
+            input.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.parentElement.classList.remove('form-group--focused');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

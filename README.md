@@ -143,7 +143,9 @@ As fontes utilizadas no projeto foram:
 
 <h2 id="demo">🌈 Demonstração</h2>
 
-Você pode acessar ao resultado final do projeto [clicando aqui](https://micheleambrosio.github.io/hbomax/).
+🔗 **Repositório GitHub:** [https://github.com/lucastuv/Projeto-HBOMAX](https://github.com/lucastuv/Projeto-HBOMAX)
+
+🌐 **Demo Original:** Você pode acessar ao resultado final do projeto original [clicando aqui](https://micheleambrosio.github.io/hbomax/).
 
 
 <h2 id="author">💻 Desenvolvedor</h2>

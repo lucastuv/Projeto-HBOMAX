@@ -152,13 +152,13 @@ As fontes utilizadas no projeto foram:
 <p>
     <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/lucastuv?v=4"/>
     <p>&nbsp&nbsp&nbspLucas Pimenta<br>
-    &nbsp&nbsp&nbsp<a href="https://github.com/lucastuv">GitHub</a>&nbsp;|&nbsp;<a href="https://linkedin.com/in/lucas-pimenta">LinkedIn</a></p>
+    &nbsp&nbsp&nbsp<a href="https://github.com/lucastuv">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/lucas-pimenta-26896b246/">LinkedIn</a></p>
 </p>
 <br/><br/>
 
 <h2 id="original-author">🎨 Autora do Projeto Original</h2>
 <p>
-    <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/55519539?v=4"/>
+    <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/209849064?v=4"/>
     <p>&nbsp&nbsp&nbspMichele Queiroz Ambrosio<br>
     &nbsp&nbsp&nbsp<a href="http://instagram.com/programi_">Instagram</a>&nbsp;|&nbsp;<a href="https://github.com/micheleambrosio">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/michele-ambrosio-a4899661/">LinkedIn</a>&nbsp;|&nbsp;<a href="https://www.twitch.tv/michele_ambrosio">Twitch</a></p>
 </p>
